@@ -1,20 +1,20 @@
-!SLIDE
+!SLIDE black
 # Configuration Management with Puppet
 ## Paul Mucur, Application Development
 
-!SLIDE
+!SLIDE blue
 # What is configuration management?
 
-!SLIDE
+!SLIDE green
 # How do we currently configure servers for new applications?
 
-!SLIDE
+!SLIDE red
 # What is wrong with this approach?
 
-!SLIDE
+!SLIDE blue
 # What would be better?
 
-!SLIDE
+!SLIDE green
 # What are our options?
 
 !SLIDE
@@ -69,7 +69,7 @@
       ensure => running,
     }
 
-!SLIDE bullets
+!SLIDE bullets green
 # Typical Web Application
 
 * Some dependent software (e.g. Ruby)
@@ -115,10 +115,10 @@
         target => '/etc/httpd/sites_available/myapp.conf';
     }
 
-!SLIDE
+!SLIDE blue
 # The role of the Puppetmaster
 
-!SLIDE
+!SLIDE red
 # Testing your manifests
 
 !SLIDE

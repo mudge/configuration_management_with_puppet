@@ -6,3 +6,10 @@
   }
 }());
 
+setTimeout(function() {
+  $(function() {
+    $('div.content').each(function() {
+      $(this).parent().addClass($(this).attr('class')).removeClass('content');
+    });
+  });
+}, 500);
