@@ -1,0 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Copse);
+div.content {
+  font-family: 'Copse';
+  padding: 0 2em;
+}
+pre.sh_sourceCode {
+  font-size: 2em;
+}
+pre.sh_sourceCode * {
+  font-family: Consolas !important;
+}
