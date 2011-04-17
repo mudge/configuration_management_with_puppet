@@ -73,19 +73,19 @@
 </div>
 
 <div id="slides" class="offscreen" style="display:none;">
-<div class="slide" data-transition="none"><div class="content" ref="slides/slides/1">
+<div class="slide" data-transition="none"><div class="content black" ref="slides/slides/1">
 <h1>Configuration Management with Puppet</h1>
 
 <h2>Paul Mucur, Application Development</h2></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="slides/slides/2">
+</div><div class="slide" data-transition="none"><div class="content blue" ref="slides/slides/2">
 <h1>What is configuration management?</h1></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="slides/slides/3">
+</div><div class="slide" data-transition="none"><div class="content green" ref="slides/slides/3">
 <h1>How do we currently configure servers for new applications?</h1></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="slides/slides/4">
+</div><div class="slide" data-transition="none"><div class="content red" ref="slides/slides/4">
 <h1>What is wrong with this approach?</h1></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="slides/slides/5">
+</div><div class="slide" data-transition="none"><div class="content blue" ref="slides/slides/5">
 <h1>What would be better?</h1></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="slides/slides/6">
+</div><div class="slide" data-transition="none"><div class="content green" ref="slides/slides/6">
 <h1>What are our options?</h1></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="slides/slides/7">
 <h1>A Resource</h1>
@@ -131,7 +131,7 @@ file { '/etc/sudoers':
 service { 'sshd':
   ensure =&gt; running,
 }</code></pre></div>
-</div><div class="slide" data-transition="none"><div class="content bullets" ref="slides/slides/11">
+</div><div class="slide" data-transition="none"><div class="content bullets green" ref="slides/slides/11">
 <h1>Typical Web Application</h1>
 
 <ul>
@@ -173,9 +173,9 @@ user { 'myapp':
     ensure =&gt; link,
     target =&gt; '/etc/httpd/sites_available/myapp.conf';
 }</code></pre></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="slides/slides/15">
+</div><div class="slide" data-transition="none"><div class="content blue" ref="slides/slides/15">
 <h1>The role of the Puppetmaster</h1></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="slides/slides/16">
+</div><div class="slide" data-transition="none"><div class="content red" ref="slides/slides/16">
 <h1>Testing your manifests</h1></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="slides/slides/17">
 <h1>Virtual Machines &amp; Vagrant</h1>
