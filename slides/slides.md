@@ -164,8 +164,8 @@
 !SLIDE bullets
 # Further Information
 
-* Puppet Labs: http://www.puppetlabs.com
-* Learning Puppet: http://docs.puppetlabs.com/learning/
-* Cucumber-Puppet: https://github.com/nistude/cucumber-puppet
-* Vagrant: http://www.vagrantup.com
+* http://www.puppetlabs.com
+* http://docs.puppetlabs.com/learning/
+* https://github.com/nistude/cucumber-puppet
+* http://www.vagrantup.com
 
