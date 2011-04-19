@@ -165,13 +165,13 @@ user { 'myapp':
 <h1>Apache Configuration</h1>
 
 <pre class="sh_ruby"><code>file {
-  '/etc/httpd/sites_available/myapp.conf':
+  '/etc/httpd/available/myapp.conf':
     ensure =&gt; present,
-    content =&gt; template("myapp.conf");
+    content =&gt; template('myapp.conf');
 
-  '/etc/httpd/sites_enabled/myapp.conf':
+  '/etc/httpd/enabled/myapp.conf':
     ensure =&gt; link,
-    target =&gt; '/etc/httpd/sites_available/myapp.conf';
+    target =&gt; '/etc/httpd/available/myapp.conf';
 }</code></pre></div>
 </div><div class="slide" data-transition="none"><div class="content blue" ref="slides/slides/15">
 <h1>The role of the Puppetmaster</h1></div>
@@ -181,10 +181,9 @@ user { 'myapp':
 <h1>Virtual Machines &amp; Vagrant</h1>
 
 <pre class="sh_ruby"><code>Vagrant::Config.run do |config|
-  config.vm.forward_port "apache", 80, 8080
-  config.vm.provision :puppet do |puppet|
-    puppet.module_path = "modules"
-  end
+
+  # Provision the Virtual Machine with Puppet.
+  config.vm.provision :puppet
 end</code></pre></div>
 </div><div class="slide" data-transition="none"><div class="content" ref="slides/slides/18">
 <h1>Cucumber-Puppet</h1>
