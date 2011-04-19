@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:regular,bold|Inconsolata);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:regular,bold);
 body {
   line-height: 1.1;
 }
@@ -13,21 +13,21 @@ pre.sh_sourceCode {
   font-size: 2em;
 }
 pre.sh_sourceCode * {
-  font-family: Consolas, Inconsolata, monospace !important;
+  font-family: Consolas !important;
 }
 div.slide.black {
   color: #fff;
   background: #000;
 }
 div.slide.blue {
-  background: #2966B8;
-  color: #fff;
+  background: #93E9ED;
+  color: #000;
 }
 div.slide.red {
   background: #851B03;
   color: #fff;
 }
 div.slide.green {
-  background: #ABFF73;
+  background: #A9F77C;
   color: #000;
 }
