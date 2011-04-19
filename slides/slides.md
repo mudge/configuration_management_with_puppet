@@ -106,13 +106,13 @@
 
     @@@ ruby
     file {
-      '/etc/httpd/sites_available/myapp.conf':
+      '/etc/httpd/available/myapp.conf':
         ensure => present,
-        content => template("myapp.conf");
+        content => template('myapp.conf');
 
-      '/etc/httpd/sites_enabled/myapp.conf':
+      '/etc/httpd/enabled/myapp.conf':
         ensure => link,
-        target => '/etc/httpd/sites_available/myapp.conf';
+        target => '/etc/httpd/available/myapp.conf';
     }
 
 !SLIDE blue
@@ -126,10 +126,9 @@
 
     @@@ ruby
     Vagrant::Config.run do |config|
-      config.vm.forward_port "apache", 80, 8080
-      config.vm.provision :puppet do |puppet|
-        puppet.module_path = "modules"
-      end
+
+      # Provision the Virtual Machine with Puppet.
+      config.vm.provision :puppet
     end
 
 !SLIDE
